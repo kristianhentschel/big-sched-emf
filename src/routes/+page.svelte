@@ -17,12 +17,13 @@
       "Stage A": true,
       "Stage B": true,
       "Stage C": true,
+      "Stage D": true,
     },
     days: {
-      "2024-05-30": false,
-      "2024-05-31": true,
-      "2024-06-01": true,
-      "2024-06-02": true,
+      "2026-07-16": true,
+      "2026-07-17": true,
+      "2026-07-18": true,
+      "2026-07-19": true,
     },
     types: {
       performance: true,
@@ -100,6 +101,7 @@
           console.log(
             `Restored ${faves.length} favourites from local storage.`,
           );
+          console.debug(faves)
         }
       } catch (e) {
         clearLocalFaves();
@@ -239,7 +241,7 @@
 </script>
 
 <svelte:head>
-  <title>EMF2024 BigSched</title>
+  <title>EMF2026 BigSched</title>
 </svelte:head>
 
 <ScheduleView {schedule} {faves} {shifts} bind:view />
@@ -250,7 +252,7 @@
   >. Made by Kristian Hentschel. This is a quick hack - no warranties of any
   kind implied. I take no responsibility for the consequences or lack thereof of
   relying on this page. View the
-  <a href="https://www.emfcamp.org/schedule/2024"
+  <a href="https://www.emfcamp.org/schedule/2026"
     >the official schedule at emfcamp.org</a
   >.
 </p>

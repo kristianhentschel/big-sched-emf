@@ -53,6 +53,8 @@
         event.is_fave = true;
       }
     });
+
+      console.debug(filteredEvents)
   };
 
   $: updateDayTimes(filteredEvents);
@@ -92,7 +94,7 @@
         (e) => e.day === day && otherVenues.includes(e.venue),
       );
     } else if (venue === "_shifts") {
-      return shifts.filter((e) => e.day === day);
+      return shifts.filter((e: any) => e.day === day); // TODO type for shifts
     } else {
       return filteredEvents.filter((e) => e.venue === venue && e.day === day);
     }
@@ -127,7 +129,7 @@
           {#if dayStart[day] <= nowMillis && nowMillis <= dayEnd[day]}
             <hr class="now" />
           {/if}
-          {#each eventsFor(venue, day) as event (event.id)}
+          {#each eventsFor(venue, day) as event (event.occurrence_id)}
             <div
               class="event type-{event.type}"
               class:fave={event.is_fave}
@@ -170,6 +172,7 @@
 {/each}
 
 <h2 class="section-title">Filters</h2>
+<p>{filteredEvents.length} / {events.length}</p>
 <div class="filters">
   <div>
     <h3 class="filter-title">

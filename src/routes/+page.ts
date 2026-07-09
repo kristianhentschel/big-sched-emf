@@ -5,7 +5,7 @@ export const load = async ({ fetch, data }) => {
 
   if (!building) {
     console.log(`fetching schedule in browser ${browser}`);
-    const response = await fetch("https://www.emfcamp.org/schedule/2024.json");
+    const response = await fetch("https://www.emfcamp.org/schedule/2026.json");
     schedule = await response.json();
     console.log(`Fetched ${schedule.length} events.`);
   } else {
