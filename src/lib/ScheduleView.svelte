@@ -154,8 +154,8 @@
                 {event.venue}
               </p>
 
-              {#if event.speaker}
-                <p class="speaker">{event.speaker}</p>
+              {#if event.names}
+                <p class="speaker">{event.names}</p>
               {/if}
               {#if event.content_note}
                 <p class="description">Content note: {event.content_note}</p>
