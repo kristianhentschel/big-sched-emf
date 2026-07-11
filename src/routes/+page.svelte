@@ -247,7 +247,7 @@
 <ScheduleView {schedule} {faves} {shifts} bind:view />
 
 <p>
-  More info on <a href="https://github.com/kristianhentschel/big-sched-emf24"
+  More info on <a href="https://github.com/kristianhentschel/big-sched-emf"
     >GitHub</a
   >. Made by Kristian Hentschel. This is a quick hack - no warranties of any
   kind implied. I take no responsibility for the consequences or lack thereof of

@@ -7,9 +7,9 @@ By default this shows the [public schedule](https://www.emfcamp.org/schedule/202
 To highlight your favourites, copy the JSON feed URL from https://www.emfcamp.org/favourites and run the app locally (assuming you're on a Mac/Linux and have git and Node.JS installed):
 
 ```sh
-git clone https://github.com/kristianhentschel/big-sched-emf26.git && cd big-sched-emf26
+git clone https://github.com/kristianhentschel/big-sched-emf.git && cd big-sched-emf
 npm install
 FAVES_URL=https://www.emfcamp.org/favourites.json?token=xxxx-xxxxxxxxxxxxxxxxxxxx npm run dev
 ```
 
-If you want to change it up, the layout and style (HTML-ish, JavaScript, SCSS) is mainly in [ScheduleView.svelte](./src/lib/ScheduleView.svelte).
+If you want to change it up, the layout and style is mainly in [ScheduleView.svelte](./src/lib/ScheduleView.svelte).
